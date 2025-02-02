@@ -1,16 +1,8 @@
-name: Test Action
-
-on: 
-  push:
-    branches:
-      - main  # Runs the action when code is pushed to the main branch
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
       - name: 23f3004267@ds.study.iitm.ac.in
         run: echo "Hello, world!"
